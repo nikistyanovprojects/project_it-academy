@@ -1,0 +1,19 @@
+.footer {
+    
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80px;
+        background-color: $second;
+    }
+    &__logo {
+        text-decoration: none;
+        list-style: none;
+        color: $text;
+        line-height: 100%;
+        font-family: $RR;
+        font-weight: 600;
+        font-size: 40px;
+    }
+}

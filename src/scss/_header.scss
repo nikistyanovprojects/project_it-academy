@@ -1,0 +1,160 @@
+.header {
+  background-image: url("../img/header_background.jpg");
+  @include backgroundstyle;
+  background-color: $second;
+  background-attachment: fixed;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.702;
+  }
+  .header__top__wrapper {
+    width: 100%;
+    background-color: rgba($color: $second, $alpha: 0.85);
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+  }
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+      position: relative;
+    }
+    &__menu {
+      #menu__toggle {
+        display: none;
+      }
+      .menu__box {
+        display: flex;
+        align-items: center;
+
+        li {
+          list-style: none;
+          padding-right: 35px;
+          line-height: 70px;
+          position: relative;
+
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+            line-height: 70px;
+            font-size: 18px;
+            font-family: $RR;
+            font-weight: 600;
+            color: $unhoveredtext;
+          }
+
+          &:first-child {
+            a {
+              color: $whitetext;
+            }
+            &:before {
+              @include hovereffect;
+            }
+          }
+          &:nth-child(2):hover::before {
+            @include hovereffect;
+            left: 30px;
+          }
+          &:nth-child(3):hover::before {
+            @include hovereffect;
+            left: 35px;
+          }
+          &:nth-child(4):hover::before {
+            @include hovereffect;
+            left: 24px;
+          }
+          &:nth-child(5):hover::before,
+          &:nth-child(7):hover::before {
+            @include hovereffect;
+          }
+          &:nth-child(6):hover::before,
+          &:nth-child(8):hover::before {
+            @include hovereffect;
+            left: 28px;
+          }
+          &:last-child {
+            padding-right: 0;
+          }
+          &:hover a {
+            color: $whitetext;
+          }
+        }
+      }
+    }
+  }
+  .header__bottom__wrapper {
+    padding: 245px 0 220px 0;
+    max-width: 1340px;
+    margin: 0 auto;
+    position: relative;
+    .bottom-btn-next,
+    .bottom-btn-prev {
+      @include btnslider;
+      text-align: right;
+    }
+    .bottom-btn-prev {
+      text-align: left;
+      &::after {
+        content: "\e908";
+      }
+    }
+  }
+  .header__bottom {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    &__heading {
+      padding-bottom: 40px;
+      .first {
+        color: $whitetext;
+      }
+    }
+    &__text {
+      max-width: 1033px;
+      margin: 0 auto;
+      color: $whitetext;
+      font-family: $LR;
+      font-size: 16px;
+      line-height: 22px;
+      padding-bottom: 50px;
+    }
+    &__btn {
+      display: flex;
+      justify-content: center;
+      .buttonlarge {
+        color: $whitetext;
+        min-width: 170px;
+        background-color: $second;
+        align-items: center;
+        font-family: $RM;
+        font-size: 20px;
+        line-height: 50px;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        padding: 0 35px;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+          transition: 0.5s;
+        }
+      }
+      .header__bottom__btn1 {
+        margin-right: 29px;
+        background-color: $accent;
+      }
+      .header__bottom__btn2 {
+        &:hover {
+          background-color: $accent;
+        }
+      }
+    }
+  }
+}

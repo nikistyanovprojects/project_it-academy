@@ -1,0 +1,20 @@
+
+    .buttonlarge {
+        color: $whitetext;
+        min-width: 170px;
+        background-color: $second;
+        align-items: center;
+        font-family: $RM;
+        font-size: 20px;
+        line-height: 50px;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        padding: 0 35px;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+          transition: 0.5s;
+          background-color: $accent;
+        }
+    }

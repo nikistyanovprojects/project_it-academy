@@ -1,0 +1,69 @@
+.reseller {
+  max-width: 270px;
+  min-height: 526px;
+  .reseller__wrapper {
+    text-align: center;
+    border: solid 1px #e7e7e7;
+    &:hover .reseller__price,
+    &:hover .reseller__link .link {
+        background-color: $accent;
+        transition: 0.5s;
+      }
+  }
+  &__name {
+    font-family: $RM;
+    font-size: 20px;
+    line-height: 100%;
+    color: $whitetext;
+    text-transform: uppercase;
+    background-color: $second;
+    min-height: 48px;
+    @include classicflex;
+  }
+  &__price {
+    background-color: #f2f2f2;
+    min-height: 87px;
+    @include classicflex;
+
+    .resprice {
+      font-family: $LB;
+      font-size: 50px;
+      line-height: 100%;
+      color: $second;
+      text-transform: uppercase;
+    }
+    .value {
+      font-family: $LR;
+      font-size: 16px;
+      line-height: 100%;
+      color: $second;
+      font-weight: bold;
+      padding-top: 34px;
+    }
+  }
+  &__cpu,
+  &__hard,
+  &__ram,
+  &__traffic,
+  &__connection,
+  &__ip {
+    @include cardresellerinfo;
+  }
+  &__link {
+    padding: 20px;
+    min-height: 80px;
+    
+    .link {
+      list-style: none;
+      color: $whitetext;
+      background-color: $second;
+      text-decoration: none;
+      min-height: 38px;
+      font-family: $RR;
+      font-size: 18px;
+      line-height: 100%;
+      @include classicflex;
+     
+    }
+  }
+}

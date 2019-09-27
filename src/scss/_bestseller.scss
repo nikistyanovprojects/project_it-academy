@@ -1,0 +1,21 @@
+.bestseller {
+    background-color: $whitetext;
+    &__wrapper {
+        padding: 100px 0;
+    }
+    &__subheading {
+        padding: 50px 0;
+    }
+    &__reseller {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        &__first,
+        &__second,
+        &__third,
+        &__fourth {
+            width: 24%;
+        }
+    }
+}

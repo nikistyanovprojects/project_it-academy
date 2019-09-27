@@ -1,0 +1,77 @@
+.follow {
+  background-image: url("../img/background_follow.jpg");
+  @include backgroundstyle;
+ 
+  min-height: 380px;
+  position: relative;
+  background-position: bottom;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $second;
+    opacity: 0.5;
+    
+  }
+  &__wrapper {
+    padding: 100px 0;
+    position: relative;
+    z-index: 4;
+  }
+  &__heading {
+     
+      .first {
+          color: $whitetext;
+      }
+  }
+  &__social {
+    max-width: 450px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 50px;
+    
+    &__facebook {
+      .hexagon__wrapper {
+         
+        position: relative;
+        &::before {
+          @include social;
+          content: "\e914";
+        }
+        
+        
+      }
+    }
+    &__twitter {
+      .hexagon__wrapper {
+        position: relative;
+        &::before {
+          @include social;
+          content: "\e915";
+          left: 25px;
+        }
+      }
+    }
+    &__paint {
+      .hexagon__wrapper {
+        position: relative;
+        &::before {
+          @include social;
+          content: "\e912";
+        }
+      }
+    }
+    &__google {
+      .hexagon__wrapper {
+        position: relative;
+        &::before {
+          @include social;
+          content: "\e900";
+        }
+      }
+    }
+  }
+}

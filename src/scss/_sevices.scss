@@ -1,0 +1,82 @@
+.services {
+  background-color: $second;
+  &__wrapper {
+    padding: 100px 0;
+  }
+  &__heading {
+    .first {
+      color: $whitetext;
+    }
+  }
+  &__subheading {
+    padding: 50px 0 100px 0px;
+  }
+  &__function {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &:nth-child(5),
+    &:nth-child(6) {
+      padding-bottom: 0px;
+    }
+    &__development,
+    &__htmlcss,
+    &__wordpress,
+    &__applictation {
+      padding-bottom: 60px;
+    }
+    &__development {
+      .hexagon__wrapper {
+        &::before {
+          @include beforefunctionicons;
+          content: "\e90f";
+        }
+      }
+    }
+    &__htmlcss {
+      .hexagon__wrapper {
+        &::before {
+          @include beforefunctionicons;
+          content: "\e90e";
+          left: 20px;
+        }
+      }
+    }
+    &__wordpress {
+      .hexagon__wrapper {
+        &::before {
+          @include beforefunctionicons;
+          content: "\e90d";
+          left: 17px;
+        }
+      }
+    }
+    &__application {
+      .hexagon__wrapper {
+        &::before {
+          @include beforefunctionicons;
+          content: "\e901";
+          left: 17px;
+        }
+      }
+    }
+    &__design {
+      .hexagon__wrapper {
+        &::before {
+          @include beforefunctionicons;
+          content: "\e90c";
+          left: 17px;
+        }
+      }
+    }
+    &__responsive {
+      .hexagon__wrapper {
+        &::before {
+          @include beforefunctionicons;
+          content: "\e90b";
+          left: 17px;
+        }
+      }
+    }
+  }
+}

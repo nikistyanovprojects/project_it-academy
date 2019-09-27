@@ -1,0 +1,11 @@
+.subheading {
+    text-align: center;
+    font-family: $LB;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    color:$subheading;
+    .subheadingred {
+        color:$accent;
+    }
+}

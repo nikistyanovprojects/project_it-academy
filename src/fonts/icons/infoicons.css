@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?n17dsq');
+  src:  url('fonts/icomoon.eot?n17dsq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?n17dsq') format('truetype'),
+    url('fonts/icomoon.woff?n17dsq') format('woff'),
+    url('fonts/icomoon.svg?n17dsq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-hexagon:before {
+  content: "\e909";
+}
+.icon-add-outline:before {
+  content: "\e90a";
+}
+.icon-google:before {
+  content: "\e900";
+}
+.icon-tablet:before {
+  content: "\e901";
+}
+.icon-phone:before {
+  content: "\e901";
+}
+.icon-facebook:before {
+  content: "\e914";
+}
+.icon-facebook-f:before {
+  content: "\e914";
+}
+.icon-twitter:before {
+  content: "\e915";
+}
+.icon-laptop:before {
+  content: "\e90b";
+}
+.icon-pencil:before {
+  content: "\e90c";
+}
+.icon-wordpress:before {
+  content: "\e90d";
+}
+.icon-html5:before {
+  content: "\e90e";
+}
+.icon-code:before {
+  content: "\e90f";
+}
+.icon-plus:before {
+  content: "\e910";
+}
+.icon-fire:before {
+  content: "\e911";
+}
+.icon-pinterest-p:before {
+  content: "\e912";
+}
+.icon-eye:before {
+  content: "\e913";
+}
+.icon-comment:before {
+  content: "\e902";
+}
+.icon-user:before {
+  content: "\e903";
+}
+.icon-check:before {
+  content: "\e904";
+}
+.icon-check-square-o:before {
+  content: "\e905";
+}
+.icon-heart:before {
+  content: "\e906";
+}
+.icon-chevron-right:before {
+  content: "\e907";
+}
+.icon-chevron-left:before {
+  content: "\e908";
+}

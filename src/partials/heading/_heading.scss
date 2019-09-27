@@ -1,0 +1,13 @@
+.heading {
+    font-size: 30px;
+    font-family: $RB;
+    line-height: 100%;
+    letter-spacing: normal;
+    text-align: center;
+    .first {
+      color:$second;
+    }
+    .second {
+      color:$accent;
+    }
+  }

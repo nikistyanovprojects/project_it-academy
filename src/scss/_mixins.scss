@@ -1,0 +1,113 @@
+@mixin backgroundstyle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@mixin hovereffect {
+  content: "";
+  position: absolute;
+  transition: 0.7s;
+  width: 27px;
+  height: 64px;
+  border-top: solid $accent 3px;
+  border-bottom: solid $accent 3px;
+  left: 13px;
+}
+@mixin btnslider {
+  outline: none;
+  &:after {
+    content: "\e907";
+    font-family: "icomoon";
+    color: $text;
+    font-size: 30px;
+  }
+  &:hover:after {
+    color: $accent;
+    transition: 0.5s;
+  }
+}
+@mixin textsectoinabout {
+  text-align: left;
+  font-family: $LR;
+  line-height: 22px;
+  color: $text;
+}
+@mixin iconshexagon {
+  &:before {
+    content: "\e906";
+    font-family: "icomoon";
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    font-size: 34px;
+    z-index: 4;
+  }
+}
+@mixin hoverportfolio {
+  &:hover:before {
+    content: "\e910";
+    font-family: "icomoon";
+    color: $whitetext;
+    font-size: 32px;
+    line-height: 16px;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    top: 50%;
+    left: 190px;
+  }
+  &:hover:after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $second;
+    left: 0;
+    top: 0;
+    opacity: 0.6;
+    transition: 0.5s;
+  }
+}
+@mixin beforetextclients {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -34%;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+}
+@mixin beforefunctionicons {
+  position: absolute;
+  font-family: "icomoon";
+  z-index: 3;
+  font-size: 32px;
+  color: $second;
+  top: 18px;
+  left: 15px;
+}
+@mixin classicflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin cardresellerinfo {
+  min-height: 50px;
+  font-family: $LR;
+  font-size: 16px;
+  line-height: 100%;
+  color: $second;
+  @include classicflex;
+  border-bottom: solid 1px #e7e7e7;
+}
+@mixin social {
+  position: absolute;
+  font-family: "icomoon";
+  font-size: 24px;
+  color: $accent;
+  top: 10px;
+  left: 29px;
+  z-index: 4;
+}

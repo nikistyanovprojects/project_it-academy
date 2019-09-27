@@ -1,0 +1,243 @@
+@import "../src/scss/normalize";
+@import "../src/scss/fonts";
+@import "../src/scss/vars";
+@import "../src/scss/mixins";
+@import "../src/scss/swiper";
+@import "../src/scss/header";
+@import "../src/partials/section_about/about";
+@import "../src/partials/accordion/accordion";
+@import "../src/partials/heading/heading";
+@import "../src/partials/subheading/subheading";
+@import "../src/partials/card_advantages/advantages";
+@import "../src/partials/portfolio/portfolio";
+@import "../src/partials/buttons/buttonlarge";
+@import "../src/partials/features/features";
+@import "../src/partials/clients_card/clients";
+@import "../src/partials/services_card/servicescard";
+@import "../src/scss/sevices";
+@import "../src/scss/bestseller";
+@import "../src/partials/bestseller_card/bestsellercard";
+@import "../src/partials/follow_card/followcard";
+@import "../src/scss/follow";
+@import "../src/scss/addres";
+@import "../src/scss/media";
+@import "../src/scss/footer";
+
+
+/* header */
+.container {
+  max-width: 1173px;
+  margin: 0 auto;
+}
+
+.about__info__accordion {
+  max-width: 570px;
+}
+.about__advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-bottom: 100px;
+  .flat__design__wrap,
+  .retina__ready__wrap,
+  .responsive__wrap,
+  .clean__wrap {
+    position: relative;
+    @include iconshexagon;
+  }
+  .flat__design__wrap {
+    &::before {
+      top: 6%;
+      left: 44%;
+    }
+  }
+  .retina__ready__wrap {
+    &:before {
+      content: "\e905";
+    }
+  }
+  .responsive__wrap {
+    &:before {
+      content: "\e901";
+    }
+  }
+  .clean__wrap {
+    &:before {
+      content: "\e911";
+      left: 46%;
+    }
+  }
+}
+.portfolio {
+  background-color: $heading;
+  padding: 100px 0;
+  .portfolio__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio__heading {
+    .first {
+      color: $whitetext;
+    }
+  }
+  .portfolio__subheading {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+}
+.features {
+  &__wrapper {
+    padding: 100px 0;
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+    .features__subheading {
+      padding: 50px 0 177px 0;
+    }
+  }
+  .features__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 177px;
+    &__right {
+      .hexagon__wrapper {
+        order: -1;
+      }
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+.clients {
+  background-image: url("../img/background_clients.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 660px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $second;
+    width: 100%;
+    height: 100%;
+    opacity: 0.89;
+  }
+  &__wrapper {
+    position: relative;
+    z-index: 5;
+    padding: 100px 0;
+  }
+  &__heading {
+    .first {
+      color: $whitetext;
+    }
+  }
+  &__subheading {
+    padding: 50px 0 100px 0;
+  }
+  .clients__review {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1173px;
+    &__left {
+      width: 47%;
+      text-align: center;
+      .top {
+        font-family: $RM;
+        font-size: 20px;
+        line-height: 100%;
+        color: $whitetext;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .mid {
+        font-family: $LR;
+        font-size: 16px;
+        line-height: 22px;
+        color: $text;
+        padding: 44px 0;
+        max-width: 575px;
+        // margin: 0 auto;
+      }
+      .bot {
+        &__photo {
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+          }
+        }
+        &__text {
+          padding-top: 20px;
+          font-family: $RB;
+          font-size: 16px;
+          line-height: 100%;
+          color: $accent;
+          text-transform: uppercase;
+        }
+      }
+    }
+    &__right {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &__first,
+      &__second,
+      &__third,
+      &__fourth {
+        margin-bottom: 50px;
+      }
+      &__first {
+        .black__box {
+          position: relative;
+          &::before {
+            @include beforetextclients;
+            background-image: url("../img/graphicriver.png");
+            left: -33%;
+          }
+        }
+      }
+      &__second {
+        .black__box {
+          position: relative;
+          &::before {
+            @include beforetextclients;
+            background-image: url("../img/videohive.png");
+            left: -20%;
+          }
+        }
+      }
+      &__third {
+        .black__box {
+          position: relative;
+          &::before {
+            @include beforetextclients;
+            background-image: url("../img/photodune.png");
+            left: -38%;
+          }
+        }
+      }
+      &__fourth {
+        .black__box {
+          position: relative;
+          &::before {
+            @include beforetextclients;
+            background-image: url("../img/codecanyon.png");
+            top: 0px;
+            left: -10%;
+          }
+        }
+      }
+    }
+  }
+}

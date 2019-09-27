@@ -1,0 +1,83 @@
+.services__card {
+  max-width: 570px;
+  position: relative;
+  &:hover .services__card__function .hexagon__wrapper .hexagon {
+    background-color: $accent;
+    transition: 0.5s;
+  }
+  &:hover .services__card__text .card__text {
+    background-color: $accent;
+    transition: 0.5s;
+    opacity: 0.9;
+    color: $whitetext;
+  }
+  &:hover .services__card__text .hexagon__wrapper:before {
+      color: $whitetext;
+  }
+  &__function {
+    display: flex;
+    align-items: center;
+    padding: 0 0 30px 5px;
+    .hexagon__wrapper {
+      position: relative;
+      
+    }
+    .hexagon {
+      transform: rotate(90deg);
+      position: relative;
+      width: 66px;
+      height: 38.11px;
+      background-color: #c0c0c0;
+      margin: 19.05px 0;
+      border-left: solid 0px #ffffff;
+      border-right: solid 0px #ffffff;
+    }
+
+    .hexagon:before,
+    .hexagon:after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      width: 46.67px;
+      height: 46.67px;
+      -webkit-transform: scaleY(0.5774) rotate(-45deg);
+      -ms-transform: scaleY(0.5774) rotate(-45deg);
+      transform: scaleY(0.5774) rotate(-45deg);
+      background-color: inherit;
+      left: 9.6655px;
+    }
+
+    .hexagon:before {
+      top: -23.3345px;
+      border-top: solid 0px #ffffff;
+      border-right: solid 0px #ffffff;
+    }
+
+    .hexagon:after {
+      bottom: -23.3345px;
+      border-bottom: solid 0px #ffffff;
+      border-left: solid 0px #ffffff;
+    }
+
+    .function__name {
+      padding-left: 30px;
+      font-family: $RM;
+      font-size: 20px;
+      line-height: 100%;
+      color: $whitetext;
+      text-transform: uppercase;
+    }
+  }
+  &__text {
+    max-width: 570px;
+
+    .card__text {
+      font-family: $LR;
+      font-size: 16px;
+      line-height: 22px;
+      color: $text;
+      padding: 30px;
+      background-color: #343434;
+    }
+  }
+}

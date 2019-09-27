@@ -1,0 +1,63 @@
+.advantages__card {
+  align-items: center;
+  text-align: center;
+  &__hexagon {
+    transform: rotate(90deg);
+    margin-bottom: 70px;
+    .hexagon {
+        position: relative;
+        margin:0 auto;
+        width: 100px; 
+        height: 57.74px;
+        background-color: $whitetext;
+        border-left: solid 1px #333333;
+        border-right: solid 1px #333333;
+        &:hover {
+            background-color:$accent;
+            transition: 0.5s;
+        }
+      }
+      
+      .hexagon:before,
+      .hexagon:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        width: 70.71px;
+        height: 70.71px;
+        -webkit-transform: scaleY(0.5774) rotate(-45deg);
+        -ms-transform: scaleY(0.5774) rotate(-45deg);
+        transform: scaleY(0.5774) rotate(-45deg);
+        background-color: inherit;
+        left: 13.6447px;
+      }
+      
+      .hexagon:before {
+        top: -35.3553px;
+        border-top: solid 1.4142px #333333;
+        border-right: solid 1.4142px #333333;
+      }
+      
+      .hexagon:after {
+        bottom: -35.3553px;
+        border-bottom: solid 1.4142px #333333;
+        border-left: solid 1.4142px #333333;
+      }
+  }
+  &__name {
+    font-family: $RM;
+    font-size: 20px;
+    color: $second;
+    line-height: 100%;
+    font-weight: 600;
+    padding-bottom: 25px;
+  }
+  &__descrpition {
+    .description {
+      font-family: $LR;
+      font-size: 16px;
+      line-height: 22px;
+      color: $text;
+    }
+  }
+}
