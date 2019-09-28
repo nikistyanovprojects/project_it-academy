@@ -1,0 +1,166 @@
+.about {
+  background-color: $whitetext;
+
+  .about__wrapper {
+    padding: 100px 0px;
+    align-items: center;
+    width: 100%;
+  }
+  &__heading {
+    padding-bottom: 45px;
+  }
+  &__subheading {
+    padding-bottom: 95px;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+      width: 48%;
+      .about__info__text {
+        padding-bottom: 40px;
+        p {
+          font-size: 16px;
+          @include textsectoinabout;
+        }
+      }
+    }
+    &__right {
+      width: 48%;
+      &__first {
+        max-width: 300px;
+        min-height: 20px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 100%;
+        font-family: $RM;
+        font-size: 20px;
+        font-weight: 600;
+        color: $accent;
+      }
+      .about__info__right__hexagon__wrapper {
+        display: flex;
+        justify-content: center;
+      }
+      .about__info__right__hexagon__first {
+        transform: rotate(90deg);
+        position: relative;
+        width: 300px;
+        height: 173.21px;
+        margin: 86.6px 0;
+        background-image: url("../img/amr_srour.jpg");
+        background-size: auto 346.4102px;
+        background-position: center;
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0px;
+          left: 0;
+          width: 300px;
+          height: 173.2051px;
+          z-index: 2;
+          background: inherit;
+        }
+      }
+
+      .hexTop,
+      .hexBottom {
+        position: absolute;
+        z-index: 1;
+        width: 212.13px;
+        height: 212.13px;
+        overflow: hidden;
+        -webkit-transform: scaleY(0.5774) rotate(-45deg);
+        -ms-transform: scaleY(0.5774) rotate(-45deg);
+        transform: scaleY(0.5774) rotate(-45deg);
+        background: inherit;
+        left: 43.93px;
+      }
+
+      /*counter transform the bg image on the caps*/
+      .hexTop:after,
+      .hexBottom:after {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 173.20508075688775px;
+        -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+        -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+        transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+        -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        transform-origin: 0 0;
+        background: inherit;
+      }
+
+      .hexTop {
+        top: -106.066px;
+      }
+
+      .hexTop:after {
+        background-position: center top;
+      }
+
+      .hexBottom {
+        bottom: -106.066px;
+      }
+
+      .hexBottom:after {
+        background-position: center bottom;
+      }
+    }
+  }
+}
+
+.about__advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-bottom: 100px;
+  width: 100%;
+  .flat__design__wrap,
+  .retina__ready__wrap,
+  .responsive__wrap,
+  .clean__wrap {
+    width: 24%;
+    @include iconshexagon;
+  }
+  .flat__design__wrap {
+    .advantages__card__hexagon {
+      @include iconshexagon;
+      &::before {
+        content: "\e906";
+      }
+    }
+  }
+  .retina__ready__wrap {
+    .advantages__card__hexagon {
+      @include iconshexagon;
+
+      &::before {
+        content: "\e905";
+        left: 45%;
+      }
+    }
+  }
+  .responsive__wrap {
+    .advantages__card__hexagon {
+      @include iconshexagon;
+      &::before {
+        content: "\e901";
+      }
+    }
+  }
+  .clean__wrap {
+    .advantages__card__hexagon {
+      @include iconshexagon;
+      &::before {
+        content: "\e911";
+        top: 16%;
+        left: 45%;
+      }
+    }
+  }
+}

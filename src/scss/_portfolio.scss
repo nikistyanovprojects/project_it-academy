@@ -1,0 +1,19 @@
+.portfolio {
+  background-color: $heading;
+  padding: 100px 0;
+  .portfolio__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio__heading {
+    .first {
+      color: $whitetext;
+    }
+  }
+  .portfolio__subheading {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+}

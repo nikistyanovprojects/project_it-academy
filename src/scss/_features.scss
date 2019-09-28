@@ -1,0 +1,31 @@
+.features {
+  &__wrapper {
+    padding: 100px 0 200px 0;
+
+    .features__subheading {
+      padding: 50px 0 0px 0;
+    }
+  }
+  .features__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__right {
+      .hexagon__wrapper {
+        order: -1;
+      }
+    }
+    .features__block__middle {
+      position: relative;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    .features__btn {
+      text-align: center;
+      position: static;
+      margin-top: -90px;
+    }
+  }
+}
