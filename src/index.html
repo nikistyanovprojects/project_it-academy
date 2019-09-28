@@ -5,15 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
   <link rel="stylesheet" href="./css/main.css">
   <title>Creativia</title>
 </head>
-
 <body>
   <!-- header -->
-  <div class="header">
+  <header class="header">
     <div class="header__top__wrapper">
       <div class="header__top container">
         <div class="header__top__logo">
@@ -41,21 +38,21 @@
     </div>
     <div class="header__bottom__wrapper swiper-container">
       <div class="header__bottom swiper-wrapper">
-        @@include('./partials/swiper/_swiper.html', {
+        @@include('./partials/header_swiper/_header_swiper.html', {
         "pastefirstheading":"about ",
         "pastesecondheading": "creativia",
         "pastetext":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula acnisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor portaplacerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae, ",
         "pastenamebtnfirst":"features",
         "pastenamebtnsecond":"free PSD"
         })
-        @@include('./partials/swiper/_swiper.html', {
+        @@include('./partials/header_swiper/_header_swiper.html', {
           "pastefirstheading":"about ",
           "pastesecondheading": "creativia",
           "pastetext":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula acnisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor portaplacerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae, ",
           "pastenamebtnfirst":"features ",
           "pastenamebtnsecond":"free PSD"
           })
-          @@include('./partials/swiper/_swiper.html', {
+          @@include('./partials/header_swiper/_header_swiper.html', {
             "pastefirstheading":"about ",
             "pastesecondheading": "creativia",
             "pastetext":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula acnisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor portaplacerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae, ",
@@ -66,8 +63,9 @@
       <div class="bottom-btn-next swiper-button-next"></div>
       <div class="bottom-btn-prev swiper-button-prev"></div>
     </div>
-  </div>
+  </header>
 
+  <!-- section-about -->
   <section class="about">
     <div class="about__wrapper container ">
       <div class="about__heading">
@@ -102,38 +100,40 @@
         </div>
       </div>
        <div class="about__info__right">   
-         <div class="hexagon">
+         <p class="about__info__right__first">
+            AMR SROUR
+         </p> 
+           <div class="about__info__right__hexagon__wrapper">  
+         <div class="about__info__right__hexagon__first">
             <div class="hexTop"></div>
             <div class="hexBottom"></div>
-          </div>          
+          </div>       
+        </div>      
         </div>
   </div>
     </div>
-      
-     
 
-  
   <div class="about__advantages container">
     <div class="flat__design__wrap">
-      @@include('./partials/card_advantages/_advantages.html',{
+      @@include('./partials/card_about_advantages/_advantages.html',{
         "pastename":"FLAT DESIGN",
         "pastedescription":"Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet  "
       })
     </div>
     <div class="retina__ready__wrap">
-      @@include('./partials/card_advantages/_advantages.html',{
+      @@include('./partials/card_about_advantages/_advantages.html',{
         "pastename":"RETINA READY",
         "pastedescription":"Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet  "
       })
     </div>
     <div class="responsive__wrap">
-      @@include('./partials/card_advantages/_advantages.html',{
+      @@include('./partials/card_about_advantages/_advantages.html',{
         "pastename":"RESPONSIVE",
         "pastedescription":"Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet  "
       })
     </div>
     <div class="clean__wrap">
-      @@include('./partials/card_advantages/_advantages.html',{
+      @@include('./partials/card_about_advantages/_advantages.html',{
         "pastename":"ClEAN & USEFUL",
         "pastedescription":"Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet  "
       })
@@ -141,6 +141,8 @@
   </div>
   </div>
   </section>
+
+  <!-- section potrfolio -->
 <section class="portfolio"> 
   <div class="portfolio__wrapper container">
   <div class="portfolio__heading">
@@ -168,7 +170,7 @@
   
 </section>
 
-
+<!-- section features -->
 <section class="features">
   <div class="features__wrapper container">
     <div class="features__heading">
@@ -196,6 +198,14 @@
                   "pastefeatures": "RETINA READY"
                   })
         </div>
+        <div class="features__block__middle">
+          <img src="../img/phone.png" alt="phone">
+          <div class="features__btn">
+              @@include('./partials/buttons/_buttonlarge.html',{
+                "pastenamebtn": "FREE PSD"
+                })
+              </div>
+        </div>
         <div class="features__block__right">
             @@include('./partials/features/_features.html',{
               "pastefeatures": "UNLIMITED COLOR OPTION"
@@ -208,13 +218,11 @@
                   })
         </div>
       </div>
-      <div class="features__btn">
-      @@include('./partials/buttons/_buttonlarge.html',{
-        "pastenamebtn": "FREE PSD"
-        })
-      </div>
+      
   </div>
 </section>
+
+<!-- section clients -->
 <section class="clients">
   <div class="clients__wrapper container">
     <div class="clients__heading">
@@ -266,6 +274,8 @@
     </div>
   </div>
 </section>
+
+<!-- section services -->
 <section class="services">
   <div class="services__wrapper container">
     <div class="services__heading">
@@ -321,6 +331,8 @@
       </div>
   </div>
 </section>
+
+<!-- section bestseller -->
 <section class="bestseller">
   <div class="bestseller__wrapper container">
     <div class="bestseller__heading">
@@ -337,6 +349,7 @@
         })
     </div>
     <div class="bestseller__reseller">
+      
       <div class="bestseller__reseller__first">
           @@include('./partials/bestseller_card/_bestseller.html',{
             "pastename":"Reseller",
@@ -397,6 +410,7 @@
   </div>
 </section>
 
+<!-- section follow -->
 <section class="follow">
   <div class="follow__wrapper container">
     <div class="follow__heading">
@@ -430,6 +444,8 @@
     </div>
   </div>
 </section>
+
+<!-- section address -->
 <section class="address">
   <div class="address__wrapper ">
     <div class="address__heading">
@@ -452,17 +468,17 @@
     </div>
   </div>
 </section>
+
+<!-- footer -->
 <footer>
   <div class="footer__wrapper">
     <a class="footer__logo" href="#">Creativia</a>
   </div>
 </footer>
+<!-- vendors libs -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <!-- <script src="./js/jquery-3.4.1.js" ></script> -->
-  <!-- <script src="./js/jquery-3.4.1.js"></script> -->
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script src="./js/swiper.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

@@ -41,9 +41,12 @@
           @include social;
           content: "\e914";
         }
-        
+        &:hover::before  {
+          color: $whitetext;
+        }
         
       }
+      
     }
     &__twitter {
       .hexagon__wrapper {
@@ -52,6 +55,9 @@
           @include social;
           content: "\e915";
           left: 25px;
+        }
+        &:hover::before  {
+          color: $whitetext;
         }
       }
     }
@@ -62,6 +68,9 @@
           @include social;
           content: "\e912";
         }
+        &:hover::before  {
+          color: $whitetext;
+        }
       }
     }
     &__google {
@@ -70,6 +79,9 @@
         &::before {
           @include social;
           content: "\e900";
+        }
+        &:hover::before  {
+          color: $whitetext;
         }
       }
     }

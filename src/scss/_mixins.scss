@@ -33,16 +33,21 @@
   color: $text;
 }
 @mixin iconshexagon {
-  &:before {
-    content: "\e906";
+  position: relative;
+  &::before {
     font-family: "icomoon";
     position: absolute;
     top: 5%;
     left: 45%;
     font-size: 34px;
     z-index: 4;
+    color: $second;
+    top: 18%;
+    left: 44%;
+    cursor: pointer;
   }
 }
+
 @mixin hoverportfolio {
   &:hover:before {
     content: "\e910";
@@ -110,4 +115,5 @@
   top: 10px;
   left: 29px;
   z-index: 4;
+  cursor: pointer;
 }

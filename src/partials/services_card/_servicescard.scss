@@ -1,6 +1,7 @@
 .services__card {
   max-width: 570px;
   position: relative;
+  cursor: pointer;
   &:hover .services__card__function .hexagon__wrapper .hexagon {
     background-color: $accent;
     transition: 0.5s;
@@ -12,7 +13,7 @@
     color: $whitetext;
   }
   &:hover .services__card__text .hexagon__wrapper:before {
-      color: $whitetext;
+    color: $whitetext;
   }
   &__function {
     display: flex;
@@ -20,12 +21,11 @@
     padding: 0 0 30px 5px;
     .hexagon__wrapper {
       position: relative;
-      
     }
     .hexagon {
       transform: rotate(90deg);
       position: relative;
-      width: 66px;
+      width: 68px;
       height: 38.11px;
       background-color: #c0c0c0;
       margin: 19.05px 0;

@@ -1,13 +1,12 @@
 .hexagon {
   transform: rotate(90deg);
   position: relative;
-  width: 75px;
+  width: 77px;
   height: 43.3px;
   background-color: transparent;
   margin: 21.65px 0;
   border-left: solid 1px $accent;
   border-right: solid 1px $accent;
-  
 }
 
 .hexagon:before,
@@ -36,13 +35,13 @@
   border-left: solid 1.4142px $accent;
 }
 .follow__count {
-    max-width: 450px;
-    padding-top: 25px;
-    display: flex;
-    justify-content: space-around;
+  max-width: 450px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-around;
   .count {
-      max-width: 75px;
-      margin: 0 auto;
+    max-width: 75px;
+    margin: 0 auto;
     font-family: $LR;
     font-size: 16px;
     line-height: 100%;
@@ -51,10 +50,8 @@
   }
 }
 .hexagon__wrapper .hexagon {
-    cursor: pointer;
-    &:hover {
-        background-color: $whitetext;
-        
-    }
-   
+  cursor: pointer;
+  &:hover {
+    background-color: $accent;
+}
 }

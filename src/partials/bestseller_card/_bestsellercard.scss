@@ -6,9 +6,9 @@
     border: solid 1px #e7e7e7;
     &:hover .reseller__price,
     &:hover .reseller__link .link {
-        background-color: $accent;
-        transition: 0.5s;
-      }
+      background-color: $accent;
+      transition: 0.5s;
+    }
   }
   &__name {
     font-family: $RM;
@@ -52,7 +52,7 @@
   &__link {
     padding: 20px;
     min-height: 80px;
-    
+
     .link {
       list-style: none;
       color: $whitetext;
@@ -63,7 +63,6 @@
       font-size: 18px;
       line-height: 100%;
       @include classicflex;
-     
     }
   }
 }

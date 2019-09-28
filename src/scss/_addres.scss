@@ -1,22 +1,20 @@
 .address {
- background-color: $whitetext;
- &__wrapper {
-     padding-top: 100px;
- }
- &__subheading {
-     padding: 50px 0 100px 0;
- }
+  background-color: $whitetext;
+  &__wrapper {
+    padding-top: 100px;
+  }
+  &__subheading {
+    padding: 50px 0 100px 0;
+  }
 
- &__map {
-     overflow: hidden;
-     
-     iframe {
-        width: 100%;
-        min-height: 580px;
-        border: transparent;
-        outline: none;
-     }
-    
- }
- 
+  &__map {
+    overflow: hidden;
+
+    iframe {
+      width: 100%;
+      min-height: 580px;
+      border: transparent;
+      outline: none;
+    }
+  }
 }
