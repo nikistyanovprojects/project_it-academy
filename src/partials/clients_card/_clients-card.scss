@@ -1,0 +1,36 @@
+.clients__card {
+    
+    min-width: 270px;
+    max-height: 116px;
+    padding: 48px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $whitetext;
+    cursor: pointer;
+    -webkit-box-shadow: inset 10px 10px 147px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 10px 10px 147px 0px rgba(0,0,0,0.75);
+box-shadow: inset 10px 10px 147px 0px rgba(0,0,0,0.75);
+&:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: $accent;
+}
+    .cardtext {
+        font-family: $MOM;
+        color:$second;
+        line-height: 100%;
+        font-size: 24px;
+        
+    }
+    .wrapper__blacbox {
+        order: -1;
+    }
+    .black__box {
+        width: 25px;
+        height: 25px;
+        background-color: $second;
+        border-radius: 2px;
+        margin-right: 10px;
+    }
+}
